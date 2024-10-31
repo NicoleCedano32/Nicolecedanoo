@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TuApp.MainPage">
+
+    <StackLayout Padding="20" BackgroundColor="#f0f0f0">
+
+        <!-- Imagen de perfil -->
+        <Image Source="nicole.jpg" 
+               HorizontalOptions="Center"
+               HeightRequest="100"
+               WidthRequest="100"
+               Aspect="AspectFill"
+               Margin="0,20,0,20"/>
+
+        <!-- Nombre y título -->
+        <Label Text="Nicole Cedano Grullón"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+
+        <Label Text="Desarrolladora de Software"
+               FontSize="18"
+               HorizontalOptions="Center"
+               TextColor="#888888"
+               Margin="0,0,0,20"/>
+
+        <!-- Habilidades -->
+        <Label Text="Ingeniera en Software Apasionada por convertir ideas en soluciones tecnológicas funcionales. Con experiencia en .NET, C# y Xamarin, me especializo en desarrollar aplicaciones eficientes y atractivas, siempre enfocada en la mejora continua y en estar al día con las últimas tendencias en tecnología."
+               FontSize="16"
+               HorizontalOptions="Center"
+               TextColor="#555555"
+               Margin="0,0,0,20"/>
+
+        <!-- Botones de redes sociales -->
+        <Button Text="LinkedIn"
+                BackgroundColor="#0077B5"
+                TextColor="White"
+                Clicked="OnLinkedInClicked"/>
+
+        <Button Text="Twitter"
+                BackgroundColor="#1DA1F2"
+                TextColor="White"
+                Clicked="OnTwitterClicked"/>
+
+        <Button Text="Facebook"
+                BackgroundColor="#3b5998"
+                TextColor="White"
+                Clicked="OnFacebookClicked"/>
+
+        <Button Text="YouTube"
+                BackgroundColor="#FF0000"
+                TextColor="White"
+                Clicked="OnYouTubeClicked"/>
+
+        <Button Text="Instagram"
+                BackgroundColor="#E1306C"
+                TextColor="White"
+                Clicked="OnInstagramClicked"/>
+
+    </StackLayout>
+</ContentPage>
